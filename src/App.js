@@ -60,6 +60,8 @@ const Navigator = () => {
   return (
     <div>
       <NavBar>
+        <Link to="/secret-key">Add Secret Key</Link>
+        <Link to="/faucet-key">Add Faucet Key</Link>
         <Link to="/balance">Check Balance</Link>
         {account && (
           <Fragment>
@@ -67,8 +69,6 @@ const Navigator = () => {
             <Link to="/contract">Smart Contract</Link>
           </Fragment>
         )}
-        <Link to="/secret-key">Add Secret Key</Link>
-        <Link to="/faucet-key">Add Faucet Key</Link>
       </NavBar>
       {account && <p>Account: {account}</p>}
     </div>
